@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- this code was created by Barey(nama tiktok)
+my tiktok account @barey__ you can follow to see my videos -->
+<!-- warning!! jangan ubah code jika kalian tidak mengerti html/css/js -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic Island</title>
+  <link rel="stylesheet" href="DI.css">
+</head>
+<body>
+  <!-- ini watermark yaaa -->
+  <h1 data-text="&nbsp;TIKTOK @barey__&nbsp;">&nbsp;TIKTOK @barey__&nbsp;</h1>
+  
+  <div class="box">
+    <div class="inner">
+      <div class="island_popup">
+        <div class="content">
+          <div class="details">
+            <div class="imgBox">
+              <!-- img src ini profil yang nelfon jadi gambarnya isi sendiri sesuai nama gambar -->
+              <img src="PP.jpg">
+            </div>
+            <!-- bagian p/paragraf nama yang nelfon bisa kalian ganti contoh <p>barey</pp -->
+            <p>Someone Calling</p>
+          </div>
+          <div class="action">
+            <ion-icon name="call" class="red"></ion-icon>
+            <ion-icon name="call" class="green"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+    <i class="btn btn1"></i>
+    <i class="btn btn2"></i>
+    <i class="btn btn3"></i>
+    <i class="rightSideBtn"></i>
+  </div>
+  <!-- warning!! ini bagian javascript jadi jangan di ubah ubah! -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+  let popup = document.querySelector('.island_popup');
+  popup.onclick = function(){
+    popup.classList.toggle('active')
+  }
+  </script>
+</body>
+</html>
